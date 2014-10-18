@@ -249,7 +249,7 @@
     WeeChatProtocol._getColorObj = function(str) {
         if (str.length === 2) {
             var code = parseInt(str);
-            if (code > 255) {
+            if (code > 16) {
                 // should never happen
                 return WeeChatProtocol._getDefaultColor();
             } else {
